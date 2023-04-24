@@ -40,7 +40,7 @@ spring:
       datasource:
         master:
           name: ruoyi-vue-pro
-          url: jdbc:mysql://47.103.3.109:3306/${spring.datasource.dynamic.datasource.master.name}?useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=CTT&nullCatalogMeansCurrent=true
+          url: jdbc:mysql://127.0.0.1:3306/${spring.datasource.dynamic.datasource.master.name}?useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=CTT&nullCatalogMeansCurrent=true
           driver-class-name: com.mysql.jdbc.Driver
           username: root
           password: 3WLiVUBEwTbvAfsh
@@ -65,13 +65,13 @@ spring:
       rocketmq:
         # RocketMQ Binder 配置项，对应 RocketMQBinderConfigurationProperties 类
         binder:
-          name-server: 47.103.3.109:9876 # RocketMQ Namesrv 地址
+          name-server: 127.0.0.1:9876 # RocketMQ Namesrv 地址
 
 --- #################### 定时任务相关配置 ####################
 xxl:
   job:
     admin:
-      addresses: http://47.103.3.109:9090/xxl-job-admin # 调度中心部署跟地址
+      addresses: http://127.0.0.1:9090/xxl-job-admin # 调度中心部署跟地址
 
 --- #################### 服务保障相关配置 ####################
 
